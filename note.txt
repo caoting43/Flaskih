@@ -1,0 +1,58 @@
+1.分析需求
+2.编写代码
+3.编写单元测试
+4.自测
+5.编写接口文档
+6.提测代码
+
+
+1.发送短信服务
+
+荣联运  云通讯
+www.yunrongxun.com
+
+2.3 初始化SDK
+sdk = SmsSDK(accId, accToken, appId)
+2.4 调用发送短信方法
+sdk.sendMessage(tid, mobile, datas)
+
+3. 方法参数说明
+3.1 初始化方法
+__init__(self, accId, accToken, appId)
+参数	类型	说明
+accId	String	开发者主账号,登陆云通讯网站后,可在控制台首页看到开发者主账号ACCOUNT SID
+accToken	String	主账号令牌 TOKEN,登陆云通讯网站后,可在控制台首页看到主账号令牌AUTH TOKEN
+appId	String	请使用管理控制台中已创建应用的APPID
+3.2 调用发送短信方法
+sendMessage(self, tid: str, mobile: str, datas: tuple) -> str
+参数	类型	说明
+tid	String	短信模板 ID
+mobile	String	发送手机号，多个以英文逗号分隔，最多 200 个号码
+datas	tuple	替换短信模板占位符的内容变量
+3.3 响应参数
+{"statusCode":"000000","templateSMS":{"dateCreated":"20130201155306","smsMessageSid":"ff8080813c373cab013c94b0f0512345"}}
+参数	类型	说明
+statusCode	String	状态码，000000 为发送成功
+dateCreated	String	短信的创建时间，格式：yyyyMMddHHmmss
+smsMessageSid	tuple	短信唯一标识符
+
+
+from ronglian_sms_sdk import SmsSDK
+
+accId = '容联云通讯分配的主账号ID'
+accToken = '容联云通讯分配的主账号TOKEN'
+appId = '容联云通讯分配的应用ID'
+
+def send_message():
+    sdk = SmsSDK(accId, accToken, appId)
+    tid = '容联云通讯创建的模板ID'
+    mobile = '手机号1,手机号2'
+    datas = ('变量1', '变量2')
+    resp = sdk.sendMessage(tid, mobile, datas)
+    print(resp)
+
+
+
+2. redis文档
+http://redis-py.readthedocs.io/en/latest/#indices-and-tables
+http://redisdoc.com/index.html

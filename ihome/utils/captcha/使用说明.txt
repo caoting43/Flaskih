@@ -1,0 +1,10 @@
+1，安装pillow图形库
+pip install pillow
+
+2，在项目需要生成验证码的接口文件中导入包中的capcha文件中的capcha对象
+from captcha_for_python3.captcha import captcha
+
+3,在接口中调用captcha.generate_captcha()方法，返回值是一个元组，值分别是名称，内容，图片数据
+name, text, image_data = captcha.generate_captcha()
+
+4，将text保存在本地用于比较验证，将image_data发送给前端用于显示验证码
