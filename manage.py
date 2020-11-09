@@ -1,17 +1,29 @@
-# coding:utf-8
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
-from ihome import create_app, db
-from flask_script import Manager
-from flask_migrate import Migrate, MigrateCommand
 
-# 创建flask的应用对象
-# 测试develop
-# 开发product
-app = create_app("develop")
-manager = Manager(app)
+app = Flask(__name__)
 
-Migrate(app, db)
-manager.add_command("db", MigrateCommand)
+class Config(object):
+    """配置信息"""
+    DEBUG = True
+
+    SECRET_KEY = "AJHSDJHAJKSHDJKASHD"
+
+    # 数据库
+    SQLALCHEMY_DATABASE_URI = "mysql://root:root1234@127.0.0.1:3306/ihome_python04"
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+
+app.config.from_object(Config)
+
+db = SQLAlchemy(app)
+
+
+@app.route("/index")
+def index():
+    return "index page"
+
 
 if __name__ == '__main__':
-    manager.run()
+    app.run()
