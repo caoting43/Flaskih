@@ -1,6 +1,17 @@
 启动程序：python manage.py runserver
+启动redis：redis-server
+启动mysql：mysql -u root -p root1234
 
 
+迁移数据库三步走：
+第一步：创建迁移仓库
+python manage.py db init
+第二步：创建迁移脚本
+python manage.py db migrate -m 'init tables'
+模型类中导入models
+python manage.py db migrate -m 'init tables'
+第三步：更新数据库
+python manage.py db upgrade
 
 
 
