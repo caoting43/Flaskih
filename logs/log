@@ -44,3 +44,480 @@ INFO _internal.py:113 127.0.0.1 - - [08/Dec/2020 14:29:43] "[37mGET /static/ima
 INFO _internal.py:113 127.0.0.1 - - [08/Dec/2020 14:29:44] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [08/Dec/2020 14:29:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [08/Dec/2020 14:29:44] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /api/v1_0/index [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1975 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:28:31] "[35m[1mGET /api/v1_0/index HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+ERROR app.py:1975 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:28:47] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+ERROR app.py:1975 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:28:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:29:21] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:29:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:29:25] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:29:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:03] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:07] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:16] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:25] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:53] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_html() got an unexpected keyword argument 'file_name'
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:30:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:34] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:38:45] "[33mGET /regist.html HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:10] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:10] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:10] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:10] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:16] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:17] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:17] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:46] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -

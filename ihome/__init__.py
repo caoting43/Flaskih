@@ -9,6 +9,8 @@ import redis
 import logging
 from logging.handlers import RotatingFileHandler
 
+from ihome.utils.commons import ReConverter
+
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -30,6 +32,8 @@ formatter = logging.Formatter('%(levelname)s %(filename)s:%(lineno)d %(message)s
 file_log_handler.setFormatter(formatter)
 # 为全局的日志工具对象（flask app使用）添加日志记录器
 logging.getLogger().addHandler(file_log_handler)
+
+
 ###############################################
 
 
@@ -59,8 +63,15 @@ def create_app(config_name):
     # 为flask补充csrf防护
     CSRFProtect(app)
 
+    # 为flask添加自定义转换器
+    app.url_map.converters["re"] = ReConverter
+
     # 注册蓝图
     from ihome import api_1_0
     app.register_blueprint(api_1_0.api, url_prefix="/api/v1_0")
+
+    # 注册提供静态文件蓝图
+    from ihome import web_html
+    app.register_blueprint(web_html.html)
 
     return app
