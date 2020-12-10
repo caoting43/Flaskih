@@ -521,3 +521,88 @@ INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:17] "[37mGET /static/plu
 INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:17] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
 INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:46] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
 INFO _internal.py:113 127.0.0.1 - - [09/Dec/2020 15:39:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /regisrer.html [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    ctx.push()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1606, in get
+    return self.execute_command('GET', name)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1975 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    ctx.push()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 1606, in get
+    return self.execute_command('GET', name)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:04:50] "[35m[1mGET /regisrer.html HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:14] "[33mGET /regisrer.html HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:14] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:17] "[33mGET /regisrer.html HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:17] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/css/ihome/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/css/ihome/register.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/js/ihome/register.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/images/logo@128x59.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [10/Dec/2020 11:05:25] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
