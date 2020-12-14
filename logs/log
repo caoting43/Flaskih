@@ -760,3 +760,459 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
 TypeError: get_image_code() missing 1 required positional argument: 'image_code_id'
 INFO _internal.py:113 127.0.0.1 - - [12/Dec/2020 11:04:37] "[35m[1mGET /api/v1_0/image_codes/1234 HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /api/v1_0/image_codes/1234 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_image_code() missing 1 required positional argument: 'image_code_id'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:01:27] "[35m[1mGET /api/v1_0/image_codes/1234 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:01:28] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1891 Exception on /api/v1_0/image_codes/1234 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_image_code() missing 1 required positional argument: 'image_code_id'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:26:08] "[35m[1mGET /api/v1_0/image_codes/1234 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1_0/image_codes/1234 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_image_code() missing 1 required positional argument: 'image_code_id'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:32:17] "[35m[1mGET /api/v1_0/image_codes/1234 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:32:26] "[33mGET /api/v1_0/image_codes/32423 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR verify_code.py:22 111
+ERROR verify_code.py:24 222
+ERROR verify_code.py:36 333
+ERROR verify_code.py:38 444
+ERROR verify_code.py:47 555
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:32:45] "[37mGET /api/v1_0/image_codes/32423 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:38:44] "[33mGET /api/v1_0/image_codes/32425 HTTP/1.1[0m" 404 -
+ERROR verify_code.py:22 111
+ERROR verify_code.py:24 222
+ERROR verify_code.py:36 333
+ERROR verify_code.py:38 444
+ERROR verify_code.py:47 555
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:38:50] "[37mGET /api/v1.0/image_codes/32425 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:22 111
+ERROR verify_code.py:24 222
+ERROR verify_code.py:36 333
+ERROR verify_code.py:38 444
+ERROR verify_code.py:47 555
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:39:18] "[37mGET /api/v1.0/image_codes/32426 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR verify_code.py:22 111
+ERROR verify_code.py:24 222
+ERROR verify_code.py:36 333
+ERROR verify_code.py:38 444
+ERROR verify_code.py:47 555
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 09:39:42] "[37mGET /api/v1.0/image_codes/32429 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+ERROR verify_code.py:22 111
+ERROR verify_code.py:24 222
+ERROR verify_code.py:36 333
+ERROR verify_code.py:38 444
+ERROR verify_code.py:47 555
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:10:34] "[37mGET /api/v1.0/image_codes/6f52974c-ced0-404e-87cb-5a0153c7271e HTTP/1.1[0m" 200 -
+ERROR verify_code.py:22 111
+ERROR verify_code.py:24 222
+ERROR verify_code.py:36 333
+ERROR verify_code.py:38 444
+ERROR verify_code.py:47 555
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 11:11:53] "[37mGET /api/v1.0/image_codes/70f14e64-2654-4500-97b1-171440364df9 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:49:16] "[37mGET /api/v1.0/sms_code/18168580698 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:50:42] "[37mGET /api/v1.0/image_codes/9e1626df-971f-44ce-96cb-0b2f59ebc1a3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:51:29] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=9e1626df-971f-44ce-96cb-0b2f59ebc1a3&image_code=abcd HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:51:50] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=9e1626df-971f-44ce-96cb-0b2f59ebc1a3&image_code=UIIK HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:51:55] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=9e1626df-971f-44ce-96cb-0b2f59ebc1a3&image_code=UIIK HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:53:32] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=9e1626df-971f-44ce-96cb-0b2f59ebc1a3&image_code=UIIK HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:53:53] "[37mGET /api/v1.0/image_codes/89dc349a-4d87-4285-a2db-494e85a141a2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:54:39] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=89dc349a-4d87-4285-a2db-494e85a141a2&image_code=UTK4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 14:55:21] "[37mGET /api/v1.0/sms_code/18168580698 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:02:30] "[37mGET /api/v1.0/sms_code/18168580698 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:02:33] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=89dc349a-4d87-4285-a2db-494e85a141a2&image_code=UTK4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:03:18] "[37mGET /api/v1.0/image_codes/7651cb21-341a-4506-98af-f4f68602b20c HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:04:14] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR verify_code.py:73 b'yx8v'
+ERROR verify_code.py:74 yx8v
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:04:44] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 73, in get_sms_code
+    current_app.logger.error(int(real_image_code.lower()))
+ValueError: invalid literal for int() with base 10: b'yx8v'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:05:35] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 73, in get_sms_code
+    current_app.logger.error(int(real_image_code.lower()))
+ValueError: invalid literal for int() with base 10: b'yx8v'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:05:38] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 73, in get_sms_code
+    current_app.logger.error(int(real_image_code.lower()))
+ValueError: invalid literal for int() with base 10: b'yx8v'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:05:40] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 73, in get_sms_code
+    current_app.logger.error(int(real_image_code.lower()))
+ValueError: invalid literal for int() with base 10: b'yx8v'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:05:41] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 73, in get_sms_code
+    current_app.logger.error(str(real_image_code.lower()))
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:06:25] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 73, in get_sms_code
+    current_app.logger.error(str(real_image_code.lower()))
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:06:34] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=7651cb21-341a-4506-98af-f4f68602b20c&image_code=YX8V HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:06:49] "[37mGET /api/v1.0/image_codes/9f8822e3-7b00-4b23-9b6a-3009caf09128 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:73 b's4b6'
+ERROR verify_code.py:74 s4b6
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:07:19] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=9f8822e3-7b00-4b23-9b6a-3009caf09128&image_code=S4B6 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:10:36] "[37mGET /api/v1.0/image_codes/951e8099-9d1d-4f21-bcba-555eeb2c869c HTTP/1.1[0m" 200 -
+ERROR verify_code.py:73 b'hrbe'
+ERROR verify_code.py:74 hrbe
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:11:11] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=951e8099-9d1d-4f21-bcba-555eeb2c869c&image_code=HRBE HTTP/1.1[0m" 200 -
+ERROR verify_code.py:73 b'hrbe'
+ERROR verify_code.py:74 hrbe
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:11:13] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=951e8099-9d1d-4f21-bcba-555eeb2c869c&image_code=HRBE HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:13:31] "[37mGET /api/v1.0/image_codes/f6e70a3a-2150-4f96-8ab4-9d9546646030 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 5nx8
+ERROR verify_code.py:75 5nx8
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=6597BD0F59993D4F11421666D574FD66 HTTP/1.1" 200 121
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:14:13] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 5nx8
+ERROR verify_code.py:75 5nx8
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=5AD65802E11F2A97F4E637256237FB8B HTTP/1.1" 200 121
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:19] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 74, in get_sms_code
+    current_app.logger.error(real_image_code.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:36] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 74, in get_sms_code
+    current_app.logger.error(real_image_code.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:40] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 74, in get_sms_code
+    current_app.logger.error(real_image_code.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:42] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 74, in get_sms_code
+    current_app.logger.error(real_image_code.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:43] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 74, in get_sms_code
+    current_app.logger.error(real_image_code.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:43] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /api/v1.0/sms_code/18168580698 [GET]
+Traceback (most recent call last):
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/caoting/.virtualenvs/Flask_iHome/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/verify_code.py", line 74, in get_sms_code
+    current_app.logger.error(real_image_code.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:44] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code_id=f6e70a3a-2150-4f96-8ab4-9d9546646030&image_code=5NX8 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:16:50] "[37mGET /api/v1.0/image_codes/60bbac16-997a-479a-910a-cfb19c183693 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 lbpw
+ERROR verify_code.py:75 lbpw
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=FB53F12F850441310696ED1B014B51A1 HTTP/1.1" 200 121
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:17:22] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=60bbac16-997a-479a-910a-cfb19c183693&image_code=LBPW HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:21:00] "[37mGET /api/v1.0/image_codes/5e4be31a-4745-4803-9b74-fc59eb434212 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 rtxk
+ERROR verify_code.py:75 rtxk
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=E4CF92BDAF4E472E98BB2D2AF015410F HTTP/1.1" 200 121
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:21:37] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=5e4be31a-4745-4803-9b74-fc59eb434212&image_code=RTXK HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR verify_code.py:74 rtxk
+ERROR verify_code.py:75 rtxk
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=0526AFF484D1AB3EFECB735A70FC2FB3 HTTP/1.1" 200 68
+ERROR verify_code.py:116 判断result值
+ERROR verify_code.py:122 发送失败了
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:21:50] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=5e4be31a-4745-4803-9b74-fc59eb434212&image_code=RTXK HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:36:32] "[37mGET /api/v1.0/image_codes/88b8f101-55c2-494b-844f-b3f04dec31e1 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 5run
+ERROR verify_code.py:75 rtxk
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:37:15] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=88b8f101-55c2-494b-844f-b3f04dec31e1&image_code=RTXK HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:37:32] "[37mGET /api/v1.0/image_codes/d6e126de-a422-47ed-9902-8e6dce8db385 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:57:26] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:57:26] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:57:26] "[37mGET /api/v1.0/image_codes/627e7b15-324e-494c-bcff-1df195031610 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:57:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 vbdm
+ERROR verify_code.py:75 vbdm
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=7CF18FDD84E64F66A2102E07FCD18738 HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:58:02] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=627e7b15-324e-494c-bcff-1df195031610&image_code=VBDM HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:58:06] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:58:06] "[37mGET /api/v1.0/image_codes/e1e4f05a-f605-4148-bfc3-ce4ee3edf962 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:58:06] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:58:06] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 aqes
+ERROR verify_code.py:75 aqes
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 15:58:51] "[37mGET /api/v1.0/sms_code/18168580698?image_code_id=e1e4f05a-f605-4148-bfc3-ce4ee3edf962&image_code=AQES HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:07] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:08] "[37mGET /api/v1.0/image_codes/bd6e04c8-b9c9-4639-9d3a-f45df07ccc66 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:08] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:52:57] "[37mGET /api/v1.0/image_codes/b83fb5c1-ff52-4671-b6e1-b4f6598b5f6b HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:53:16] "[33mGET /api/v1.0/sms_codes/18168580698?image_code=NTQX&image_code_id=b83fb5c1-ff52-4671-b6e1-b4f6598b5f6b HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:54:47] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:54:47] "[37mGET /api/v1.0/image_codes/5ad50f3d-bf72-43b1-936a-b45c88a6eba1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:54:47] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:54:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:01] "[33mGET /api/v1.0/sms_codes/18168580698?image_code=LGPM&image_code_id=5ad50f3d-bf72-43b1-936a-b45c88a6eba1 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /api/v1.0/image_codes/f07f2a56-c023-492c-8992-f9d64032e9fa HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:18] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 bjwt
+ERROR verify_code.py:75 bjwt
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=DFB289D905A9D54CD91C906A1A74BDEC HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:29] "[37mGET /api/v1.0/sms_code/18168580698?image_code=BJWT&image_code_id=f07f2a56-c023-492c-8992-f9d64032e9fa HTTP/1.1[0m" 200 -

@@ -11,8 +11,8 @@ from logging.handlers import RotatingFileHandler
 
 from ihome.utils.commons import ReConverter
 
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+# import ssl
+# ssl._create_default_https_context = ssl._create_unverified_context
 
 # 数据库
 db = SQLAlchemy()
@@ -68,7 +68,7 @@ def create_app(config_name):
 
     # 注册蓝图
     from ihome import api_1_0
-    app.register_blueprint(api_1_0.api, url_prefix="/api/v1_0")
+    app.register_blueprint(api_1_0.api, url_prefix="/api/v1.0")
 
     # 注册提供静态文件蓝图
     from ihome import web_html

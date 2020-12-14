@@ -18,7 +18,7 @@ redis 操作
 客户端开启：redis-cli
 keys *      查看所有数据
 flshall     清空所有数据
-
+get value   查看固定数据
 
 
 分析需求
@@ -56,3 +56,18 @@ url：/api/v1.o/image_codes/<image_code_id>
 
     实例：
     {"errno":4001,"errmsg":"保存图片验证码失败"}
+
+
+
+
+
+生成唯一编号
+1.时间戳，同时点击会出现问题
+2.uuid  全局唯一标识符
+    32个16进制数字构成   两个16进制=一个字节
+    1s=10^3ms=10^6μs=10^9ns=10^12ps=10^15fs=10^18as=10^21zm=10^24ym
+
+
+发送短信服务
+    短信发送接口链接
+    https://doc.yuntongxun.com/p/5f029ae7a80948a1006e776e
