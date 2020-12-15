@@ -32,8 +32,6 @@ formatter = logging.Formatter('%(levelname)s %(filename)s:%(lineno)d %(message)s
 file_log_handler.setFormatter(formatter)
 # 为全局的日志工具对象（flask app使用）添加日志记录器
 logging.getLogger().addHandler(file_log_handler)
-
-
 ###############################################
 
 
