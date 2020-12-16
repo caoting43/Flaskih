@@ -1216,3 +1216,222 @@ DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accou
 ERROR verify_code.py:134 判断result值
 ERROR verify_code.py:137 发送成功了
 INFO _internal.py:113 127.0.0.1 - - [14/Dec/2020 16:55:29] "[37mGET /api/v1.0/sms_code/18168580698?image_code=BJWT&image_code_id=f07f2a56-c023-492c-8992-f9d64032e9fa HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/css/ihome/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/css/ihome/register.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/js/ihome/register.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/images/logo@128x59.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:39] "[37mGET /api/v1.0/image_codes/6460142a-594e-45b9-9d56-d74ace56e483 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:03:41] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 fxza
+ERROR verify_code.py:75 fxza
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=8CA4480EFC41E24A2D93441AF2F8F101 HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:04:07] "[37mGET /api/v1.0/sms_code/18168580698?image_code=fxza&image_code_id=6460142a-594e-45b9-9d56-d74ace56e483 HTTP/1.1[0m" 200 -
+INFO csrf.py:258 The CSRF token is missing.
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:07:19] "[31m[1mPOST /api/v1.0/users HTTP/1.1[0m" 400 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/__init__.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:12:40] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code=fxza&image_code_id=6460142a-594e-45b9-9d56-d74ace56e483 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:12:59] "[37mGET /api/v1.0/image_codes/7b66ebef-7657-4854-9e4a-e92acc52c28a HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:13:25] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:13:26] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:13:26] "[37mGET /api/v1.0/image_codes/f96da81a-66c2-4cea-ada2-71d458374d22 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:13:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 goyk
+ERROR verify_code.py:75 goyk
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=18135F413EACBC856BA770BEC2282AE9 HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:13:34] "[37mGET /api/v1.0/sms_code/18168580698?image_code=goyk&image_code_id=f96da81a-66c2-4cea-ada2-71d458374d22 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:14:04] "[35m[1mPOST /api/v1.0/users HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:14:48] "[35m[1mPOST /api/v1.0/users HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:47 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:16:40] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:47 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:12] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:35] "[37mGET /api/v1.0/image_codes/849b88f1-0d26-4f29-ada8-c13dfafc20de HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:39] "[37mGET /api/v1.0/image_codes/53ff6359-66f0-4bb1-ad44-3a50e5cfee9f HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:40] "[37mGET /api/v1.0/image_codes/a018211e-69cf-47cc-bf52-f74bce10b16d HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 cfim
+ERROR verify_code.py:75 gfim
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:48] "[37mGET /api/v1.0/sms_code/18168580698?image_code=gfim&image_code_id=a018211e-69cf-47cc-bf52-f74bce10b16d HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:55] "[35m[1mGET /api/v1.0/sms_code/18168580698?image_code=cfim&image_code_id=a018211e-69cf-47cc-bf52-f74bce10b16d HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:17:57] "[37mGET /api/v1.0/image_codes/37f4fa5d-769f-47ce-b24d-cf6fef5f9e84 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:11] "[37mGET /api/v1.0/image_codes/6921beb9-28a6-4d48-8e04-ef60c619eadf HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:17] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:17] "[37mGET /api/v1.0/image_codes/44f36a59-eeda-46c7-9c13-794731e7dece HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:17] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:17] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 ipon
+ERROR verify_code.py:75 lpon
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:27] "[37mGET /api/v1.0/sms_code/18168580698?image_code=lpon&image_code_id=44f36a59-eeda-46c7-9c13-794731e7dece HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:30] "[37mGET /api/v1.0/image_codes/07a73b6f-f420-4351-8377-b7687acfee73 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 fqfy
+ERROR verify_code.py:75 fqfy
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=E56E35A5F5D7D8FA22C515D31C8786ED HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:18:39] "[37mGET /api/v1.0/sms_code/18168580698?image_code=fqfy&image_code_id=07a73b6f-f420-4351-8377-b7687acfee73 HTTP/1.1[0m" 200 -
+ERROR passport.py:47 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:19:18] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:47 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:19:37] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:47 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:19:54] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:24:02] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:24:06] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:24:23] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:24:53] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:25:46] "[31m[1mPOST /users HTTP/1.1[0m" 405 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:26:03] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:26:11] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:26:12] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:26:13] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:26:14] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:48 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:26:45] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:45 18168580698
+ERROR passport.py:49 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:27:44] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:32] "[37mGET /api/v1.0/image_codes/f4fa244d-14d8-4e1a-9758-adcf2b45c42e HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 tksb
+ERROR verify_code.py:75 tks8
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:41] "[37mGET /api/v1.0/sms_code/18168580698?image_code=tks8&image_code_id=f4fa244d-14d8-4e1a-9758-adcf2b45c42e HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:44] "[37mGET /api/v1.0/image_codes/8e8c579a-1e48-4fb0-9a5c-dcd51f398bda HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:46] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:46] "[37mGET /api/v1.0/image_codes/3302e35c-19e3-4370-bfec-1593b018919b HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:28:46] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 brin
+ERROR verify_code.py:75 brin
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=7ACDDCF4CD97215261A288C7C0593DA5 HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:29:29] "[37mGET /api/v1.0/sms_code/18168580698?image_code=BRIN&image_code_id=3302e35c-19e3-4370-bfec-1593b018919b HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 b'682212'
+ERROR passport.py:49 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:30:35] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 b'682212'
+ERROR passport.py:60 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:30:53] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:31:33] "[37mGET /api/v1.0/image_codes/d9643713-e28c-4994-bccd-bd41bad5ca85 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 gumw
+ERROR verify_code.py:75 gumw
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=5F3E7A64FCBA8971F0F2D20670299E64 HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:32:11] "[37mGET /api/v1.0/sms_code/18168580698?image_code=GUMW&image_code_id=d9643713-e28c-4994-bccd-bd41bad5ca85 HTTP/1.1[0m" 200 -
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 b'762709'
+ERROR passport.py:60 %d format: a number is required, not str
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:32:38] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 b'762709'
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:33:13] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 None
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:33:14] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:33:49] "[37mGET /api/v1.0/image_codes/297d0e6e-5920-4ee3-9714-ee968b424f1f HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 wuks
+ERROR verify_code.py:75 wuks
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=21324E8C553F17419E34736575CBF8CB HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:33:55] "[37mGET /api/v1.0/sms_code/18168580698?image_code=wuks&image_code_id=297d0e6e-5920-4ee3-9714-ee968b424f1f HTTP/1.1[0m" 200 -
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 b'981144'
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:34:22] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+INFO _internal.py:113  * Detected change in '/Users/caoting/PycharmProjects/Flaskih/ihome/api_1_0/passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 265-380-126
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 None
+ERROR passport.py:50 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:36:29] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:36:54] "[37mGET /api/v1.0/image_codes/6a15a35e-c39a-4895-a8d7-6174dc182984 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:74 noq6
+ERROR verify_code.py:75 noq6
+DEBUG connectionpool.py:939 Starting new HTTPS connection (1): app.cloopen.com:8883
+DEBUG connectionpool.py:433 https://app.cloopen.com:8883 "POST /2013-12-26/Accounts/8a216da874af5fff0174b997014c04eb/SMS/TemplateSMS?sig=42B3D3A787DE32F1C5F95684DE403239 HTTP/1.1" 200 121
+ERROR verify_code.py:134 判断result值
+ERROR verify_code.py:137 发送成功了
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:37:13] "[37mGET /api/v1.0/sms_code/18168580698?image_code=NOQ6&image_code_id=6a15a35e-c39a-4895-a8d7-6174dc182984 HTTP/1.1[0m" 200 -
+ERROR passport.py:45 18168580698
+ERROR passport.py:46 b'015447'
+INFO _internal.py:113 127.0.0.1 - - [16/Dec/2020 16:37:37] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -

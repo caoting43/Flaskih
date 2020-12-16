@@ -28,7 +28,7 @@ def register():
     password2 = req_dict.get("password2")
 
     # 校验参数
-    if not all(mobile, sms_code, password):
+    if not all([mobile, sms_code, password, password2]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数不完整")
 
     # 校验手机号
@@ -42,7 +42,10 @@ def register():
 
     # 从redis中取出短信验证码
     try:
-        real_sms_code = redis_store.get("sms_code_%d" % mobile)
+        current_app.logger.error(mobile)
+        current_app.logger.error(redis_store.get("sms_code_%s" % mobile))
+        real_sms_code = redis_store.get("sms_code_%s" % mobile)
+        real_sms_code = str(real_sms_code, encoding="utf-8")
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="读取真实短信验证码异常")
@@ -53,7 +56,7 @@ def register():
 
     # 删除redis中的短信验证码，防止重复使用校验
     try:
-        redis_store.delete("sms_code_%d" % mobile)
+        redis_store.delete("sms_code_%s" % mobile)
     except Exception as e:
         current_app.logger.error(e)
 
@@ -72,11 +75,13 @@ def register():
     #         # 表示手机号存在
     #         return jsonify(errno=RET.DATAEXIST, errmsg="手机号已存在")
 
-
-
-
     # 保存用户的注册数据到数据库中
     user = User(name=mobile, mobile=mobile)
+    # user.generate_password_hash(password)
+
+    user.password = password  # 设置属性
+    # print(user.password)  # 读取操作
+
     try:
         db.session.add(user)
         db.session.commit()
