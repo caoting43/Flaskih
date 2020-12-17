@@ -59,8 +59,6 @@ url：/api/v1.o/image_codes/<image_code_id>
 
 
 
-
-
 生成唯一编号
 1.时间戳，同时点击会出现问题
 2.uuid  全局唯一标识符
@@ -71,3 +69,7 @@ url：/api/v1.o/image_codes/<image_code_id>
 发送短信服务
     短信发送接口链接
     https://doc.yuntongxun.com/p/5f029ae7a80948a1006e776e
+
+
+
+redis文档
