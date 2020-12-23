@@ -4,7 +4,8 @@ from flask import g, current_app, request, jsonify
 from ihome.utils.response_code import RET
 from ihome.utils.image_storage import storage
 from ihome.models import Area
-from ihome import db, constants
+from ihome import db, constants, redis_store
+import json
 
 
 @api.route("/areas")
@@ -23,4 +24,14 @@ def get_area_info():
     for area in all_li:
         area_dict_li.append(area.to_dict())
 
-    return jsonify(errno=RET.OK, errmsg="OK", data=area_dict_li)
+    # 将对象转换为字典
+    resp_dict = dict(errno=RET.OK, errmsg="OK", data=area_dict_li)
+    resp_json = json.dumps(resp_dict)
+
+    # 将数据保存到redis中
+    try:
+        redis_store.setex("area_info", constants.AREA_INFO_REDIS_CACHE_EXPIRES, resp_json)
+    except Exception as e:
+        current_app.logger.error(e)
+
+    return resp_json, 200, {"Content-ype":li}
