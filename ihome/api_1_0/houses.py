@@ -11,6 +11,16 @@ import json
 @api.route("/areas")
 def get_area_info():
     """获取城区信息"""
+    # 尝试冲redis中读取数据
+    try:
+        resp_json = redis_store.get("area_info")
+    except Exception as e:
+        current_app.logger.error(e)
+    else:
+        if resp_json is not None:
+            # redis有缓存数据
+            current_app.logger.info("hit redis area_info")
+            return resp_json, 200, {"Content-Type": "application/json"}
 
     # 查询数据库，读取城区信息
     try:
@@ -34,4 +44,4 @@ def get_area_info():
     except Exception as e:
         current_app.logger.error(e)
 
-    return resp_json, 200, {"Content-ype":li}
+    return resp_json, 200, {"Content-Type": "application/json"}

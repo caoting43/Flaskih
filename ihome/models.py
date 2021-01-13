@@ -3,6 +3,7 @@
 from datetime import datetime
 from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
+from ihome import constants
 
 
 class BaseModel(object):
@@ -56,6 +57,17 @@ class User(BaseModel, db.Model):
         :return: 如果正确，返回True，否则返回False
         """
         return check_password_hash(self.password_hash, password)
+
+    def to_dict(self):
+        """将对象转换为字典数据"""
+        user_dict = {
+            "user_id": self.id,
+            "name": self.name,
+            "mobile": self.mobile,
+            "avatar": constants.QINIU_URL_DOMAIN + self.avatar_url if self.avatar_url else "",
+            "create_time": self.create_time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        return user_dict
 
 
 class Area(BaseModel, db.Model):
