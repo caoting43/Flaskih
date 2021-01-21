@@ -3,7 +3,8 @@ from flask import session, jsonify, g
 from ihome.utils.response_code import RET
 import functools
 
-# 定义怎则表达式
+
+# 定义正则表达式
 class ReConverter(BaseConverter):
 
     def __init__(self, url_map, reqex):

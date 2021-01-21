@@ -28,9 +28,11 @@ def storage(file_data):
 
     if info.status_code == 200:
         # 表示上传成功
+        print(1)
         return ret.get("key")
     else:
         # 上传失败
+        print(2)
         raise Exception("上传七牛失败")
 
 

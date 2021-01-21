@@ -3,9 +3,8 @@ from ihome.utils.commons import login_required
 from flask import g, current_app, request, jsonify
 from ihome.utils.response_code import RET
 from ihome.utils.image_storage import storage
-from ihome.models import Area, House, Facility
+from ihome.models import Area, House, Facility, HouseImage
 from ihome import db, constants, redis_store
-from ihome.utils.commons import login_required
 import json
 
 
@@ -137,7 +136,8 @@ def save_house_info():
         # ["7","8"]
         try:
             # select * from ih_facility_info where id in []
-            facilities = Facility.query.filter(Facility.id.in_(facility_ids))
+            # 数据库获取勾选设置信息
+            facilities = Facility.query.filter(Facility.id.in_(facility_ids)).all()
         except Exception as e:
             current_app.logger.error(e)
             return jsonify(errno=RET.DBERR, errmsg="数据库异常")
@@ -160,6 +160,7 @@ def save_house_info():
 
 
 @api.route("/houses/image", methods=["POST"])
+@login_required
 def save_house_image():
     """
     保存房屋图片
@@ -167,4 +168,47 @@ def save_house_image():
     :return:
     """
     image_file = request.files.get("house_image")
-    house_id = request.form.get()
+    print(image_file)
+    print(1)
+    house_id = request.form.get("house_id")
+    print(house_id)
+    print(2)
+    if not all([image_file, house_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+    # 判断house_id正确性
+    try:
+        house = House.query.get(house_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据库异常")
+
+    if house is None:
+        return jsonify(errno=RET.NODATA, errmsg="房屋不存在")
+
+    image_data = image_file.read()
+    # 保存图片到七牛中
+    try:
+        file_name = storage(image_data)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="保存图片失败")
+
+    # 保存图片信息到数据库中
+    house_image = HouseImage(house_id=house_id, url=file_name)
+    db.session.add(house_image)
+
+    # 处理房屋的主图片
+    if not house.index_image_url:
+        house.index_image_url = file_name
+        db.session.add(house)
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存图片数据异常")
+
+    image_url = constants.QINIU_URL_DOMAIN + file_name
+
+    return jsonify(errno=RET.OK, errmsg="OK", data={"image_url": image_url})
