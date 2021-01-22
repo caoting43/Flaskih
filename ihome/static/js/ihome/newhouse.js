@@ -5,17 +5,23 @@ function getCookie(name) {
 
 $(document).ready(function () {
     // 向后端获取城区信息
-    // $.get("/api/v1.0/areas", function (resp) {
-    //     if (resp.errno == "0") {
-    //         var areas = resp.data;
-    //
-    //         // 使用js模板
-    //         var html = template("areas-tmpl", {areas: areas})
-    //         $("#area-id").html(html);
-    //     } else {
-    //         alert(resp.errmsg);
-    //     }
-    // }, "json");
+    $.get("/api/v1.0/areas", function (resp) {
+        if (resp.errno == "0") {
+            var areas = resp.data;
+            // for (i=0; i<areas.length; i++) {
+            //     var area = areas[i];
+            //     $("#area-id").append('<option value="'+ area.aid +'">'+ area.aname +'</option>');
+            // }
+
+            // 使用js模板
+            var html = template("areas-tmpl", {areas: areas})
+            $("#area-id").html(html);
+
+        } else {
+            alert(resp.errmsg);
+        }
+
+    }, "json");
 
     $("#form-house-info").submit(function (e) {
         e.preventDefault();
@@ -47,23 +53,23 @@ $(document).ready(function () {
             success: function (resp) {
                 if (resp.errno == "4101") {
                     // 用户未登录
-                    location.href = "/login.html"
+                    location.href = "/login.html";
                 } else if (resp.errno == "0") {
-                    //隐藏基本信息表单
+                    // 隐藏基本信息表单
                     $("#form-house-info").hide();
                     // 显示图片表单
                     $("#form-house-image").show();
-                    // 设置
-                    $("#form-id").val(resp.data.house_id);
+                    // 设置图片表单中的house_id
+                    $("#house-id").val(resp.data.house_id);
                 } else {
-                    alert(resp.errmsg)
+                    alert(resp.errmsg);
                 }
             }
         })
     });
     $("#form-house-image").submit(function (e) {
         e.preventDefault();
-        $("#form-house-image").ajaxSubmit({
+        $(this).ajaxSubmit({
             url: "/api/v1.0/houses/image",
             type: "post",
             dataType: "json",
@@ -72,16 +78,13 @@ $(document).ready(function () {
             },
             success: function (resp) {
                 if (resp.errno == "4101") {
-                    // 用户未登录
                     location.href = "/login.html";
                 } else if (resp.errno == "0") {
                     $(".house-image-cons").append('<img src="' + resp.data.image_url + '">');
-                    alert("ok")
                 } else {
                     alert(resp.errmsg);
                 }
             }
         })
     })
-
-});
+})

@@ -168,11 +168,8 @@ def save_house_image():
     :return:
     """
     image_file = request.files.get("house_image")
-    print(image_file)
-    print(1)
     house_id = request.form.get("house_id")
-    print(house_id)
-    print(2)
+
     if not all([image_file, house_id]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
     # 判断house_id正确性
