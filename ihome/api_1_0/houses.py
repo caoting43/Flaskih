@@ -3,7 +3,7 @@ from ihome.utils.commons import login_required
 from flask import g, current_app, request, jsonify
 from ihome.utils.response_code import RET
 from ihome.utils.image_storage import storage
-from ihome.models import Area, House, Facility, HouseImage
+from ihome.models import Area, House, Facility, HouseImage,User
 from ihome import db, constants, redis_store
 import json
 
@@ -209,3 +209,23 @@ def save_house_image():
     image_url = constants.QINIU_URL_DOMAIN + file_name
 
     return jsonify(errno=RET.OK, errmsg="OK", data={"image_url": image_url})
+
+
+@api.route("/user/houses", methods=["GET"])
+def get_user_houses():
+    """获取房东发布的房源信息条目"""
+    user_id = g.user_id
+
+    try:
+        user = User.query.get(user_id)
+        houses = user.houses
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR,errmsg="获取数据失败")
+
+    # 将查询到的房屋信息转换为字典存放到列表中
+    houses_list = []
+    if houses:
+        for house in houses:
+            houses_list.append(house.to_basic_dict())
+    return jsonify(errno=RET.OK,errmsg="OK",data={"houses":houses_list})

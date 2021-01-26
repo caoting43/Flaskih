@@ -117,11 +117,25 @@ class House(BaseModel, db.Model):
     max_days = db.Column(db.Integer, default=0)  # 最多入住天数，0表示不限制
     order_count = db.Column(db.Integer, default=0)  # 预订完成的该房屋的订单数
     index_image_url = db.Column(db.String(256), default="")  # 房屋主图片的路径
-
     facilities = db.relationship("Facility", secondary=house_facility)  # 房屋的设施
-
     images = db.relationship("HouseImage")  # 房屋的图片
     orders = db.relationship("Order", backref="house")  # 房屋的订单
+
+    def to_basic_dict(self):
+        """将基本信息转换成字典数据"""
+        house_dict = {
+            "house_id": self.id,
+            "title": self.title,
+            "price": self.price,
+            "area_name": self.area_name,
+            "img_url": constants.QINIU_URL_DOMAIN + self.index_image_url if self.index_image_url else "",
+            "room_count": self.room_count,
+            "order_count": self.order_count,
+            "address": self.address,
+            "user_avatar": constants.QINIU_URL_DOMAIN + self.user.avatar_url if self.user.avatar_url else "",
+            "ctime": self.create_time.strftime("%y-%m-%d")
+        }
+        return house_dict
 
 
 class Facility(BaseModel, db.Model):
